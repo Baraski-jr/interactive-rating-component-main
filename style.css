@@ -1,0 +1,120 @@
+:root {
+    /* Primary colors */
+    --accent-100: hsl(25, 97%, 53%);
+    /* Natural colors */
+    --clr-100: hsl(0, 0%, 100%);
+    --clr-150: hsla(0, 0%, 100%, .8);
+    --clr-200: hsl(217, 12%, 63%);
+    --clr-300: hsl(216, 12%, 54%);
+    --clr-350: hsla(216, 12%, 54%, .1);
+    --clr-400: hsl(213, 19%, 18%);
+    --clr-500: hsl(216, 12%, 8%);   
+
+    --ff: "Overpass", sans serif;
+    --fs: 15px;
+}
+body {
+    height: 100vh;
+    height: 100dvh;
+    display: grid;
+    padding-inline: 1em;
+    place-content: center;
+    background-color: var(--clr-500);
+    font-family: sans-serif;
+}
+main {
+    border-radius: 1em;
+    padding: 2em;
+    width: min(85%, 25em);
+    display: grid;
+    gap: 1em;
+    margin: auto;
+    background-color: var(--clr-400);
+}
+.title {
+    color: var(--clr-100);
+    margin-top: 1.2em;
+}
+.text {
+    color: var(--clr-200);
+    line-height: 1.5;
+}
+/* .success.text {
+    text-align: center;
+} */
+.rate-digits-container {
+    display: flex;
+    justify-content: space-between;
+}
+.star {
+    padding: 1em;
+}
+
+.round-border {
+    background-color: var(--clr-350);
+    border-radius: 50em;
+}
+.semi-round-border {
+    border-radius: 5em;
+    padding: 1em;
+}
+.pointer {
+    cursor: pointer;
+}
+.center {
+    margin: auto;
+    text-align: center;
+}
+.show {
+    display: block;
+    transition: display .5s;
+}
+.hide {
+    display: none;
+    transition: display .3s;
+}
+.rate-digit {
+    color: var(--clr-200);
+    background-color: var(--clr-350);
+    width: 3em;
+    height: 3em;
+    display: grid;
+    font-size: var(--fs);
+    font-weight: 700;
+    place-content: center;
+}
+.rate-digit:hover {
+    background-color: var(--clr-200);
+    color: var(--clr-100);
+}
+.active {
+    background-color: var(--accent-100);
+    color: var(--clr-100);
+}
+.submit-btn {
+    width: 100%;
+    border: none;
+    background-color: var(--accent-100);
+    color: var(--clr-100);
+    text-transform: uppercase;
+    font-size: var(--fs);
+    font-weight: 700;
+    letter-spacing: .2em;
+    margin-top: .7em;
+}
+.submit-btn:hover {
+    background-color: var(--clr-100);
+    color: var(--accent-100);
+}
+.submit-btn:active {
+    background-color: var(--clr-150);
+}
+/* Thank you message */
+
+.rate-display {
+    margin-top: 2em;
+    width: fit-content;
+    background-color: var(--clr-350);
+    color: var(--accent-100);
+    font-size: var(--fs);
+}
